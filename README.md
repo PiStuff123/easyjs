@@ -52,14 +52,17 @@ easyJS.chain([1,2,2,3])
 
 ## Plugins
 
-If you want a plugin-only core, use `easyjs-empty` and add plugins like `easyjs-maths`, `easyjs-time`, `easyjs-random`, `easyjs-date`, `easyjs-json`, and `easyjs-collections`.
+You can add custom plugins to EasyJS directly:
 
 ```js
-const easy = require("easyjs-empty");
-const maths = require("easyjs-maths");
+const easyJS = require("@cooljs123/easyjs");
 
-easy.use(maths); // loads basic
-easy.use(maths.advanced); // loads advanced
+const reversePlugin = (easy) => {
+  easy.reverse = (str) => String(str).split("").reverse().join("");
+};
+
+easyJS.use(reversePlugin);
+easyJS.reverse("hello"); // "olleh"
 ```
 
 ## Examples (All 369 Functions)
