@@ -1,7 +1,11 @@
 {
   "name": "@cooljs123/easyjs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "One import with 372 small, everyday JavaScript helpers (no aliases).",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/PiStuff123/easyjs.git"
+  },
   "keywords": [
     "javascript",
     "easy",
@@ -163,5 +167,8 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@cooljs123/easyjs": "github:PiStuff123/easyjs"
   }
 }

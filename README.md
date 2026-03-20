@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-# easyjs
-One import with 369 small, everyday JavaScript helpers (no aliases).
-=======
 # **EasyJS**
+
+GitHub: [easyjs](https://github.com/PiStuff123/easyjs)
 
 One import with 369 small, everyday JavaScript helpers (no aliases). Written in vanilla JS with no external libraries.
 
@@ -50,6 +48,18 @@ easyJS.chain([1,2,2,3])
   .shuffle()
   .take(2)
   .value()
+```
+
+## Plugins
+
+If you want a plugin-only core, use `easyjs-empty` and add plugins like `easyjs-maths`, `easyjs-time`, `easyjs-random`, `easyjs-date`, `easyjs-json`, and `easyjs-collections`.
+
+```js
+const easy = require("easyjs-empty");
+const maths = require("easyjs-maths");
+
+easy.use(maths); // loads basic
+easy.use(maths.advanced); // loads advanced
 ```
 
 ## Examples (All 369 Functions)
@@ -2822,4 +2832,3 @@ easyJS.install()
 "  ToM  ".normalizeString() // "tom"
 ```
 #### <small>Made by Thomas Boerdam</small>
->>>>>>> d2c58c2 (initial commit)
